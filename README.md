@@ -1,54 +1,5 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+<p align="center"> <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo" /> </p> <h1 align="center">osTicket - Ticket. lifecycle</h1>
+<h2>Exploring Ticket Features</h2> <p>In this section, we will create a ticket to explore the multiple features we can assign to it. This includes:</p> <ul> <li>Changing the due date.</li> <li>Assigning the responsible department.</li> <li>Setting who can view the ticket.</li> <li>And much more.</li> </ul>
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
-
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
-
-<h2>Operating Systems Used </h2>
-
-- Windows 10</b> (21H2)
-
-<h2>Ticket Lifecycle Stages</h2>
-
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
-
-<h2>Lifecycle Stages</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h2>Let's create several test tickets and view them from the perspective of the admin and the end user who will open the tickets.</h2> <h2>Installation Steps</h2> <ol> <li><strong>Access osTicket</strong> <ul> <li><strong>Admin/Analyst Login Page:</strong> <a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a> <br />This is where administrators and agents manage the ticketing system.</li> <li><strong>End User osTicket URL:</strong> <a href="http://localhost/osTicket">http://localhost/osTicket</a> <br />This is the interface for customers to submit tickets.</li> </ul> </li> </ol>
+<h2>Creating and Managing Tickets</h2> <h3>Step 1: Initial Setup and Department Configuration</h3> <ol> <li><strong>Change the SysAdmins Department to a Top-Level Department:</strong> <ul> <li>Navigate to the department settings.</li> <li>Change the hierarchy to make SysAdmins a top-level department.</li> </ul> </li> <li><strong>Delete the Maintenance Department:</strong> <ul> <li>Locate the Maintenance Department in the department list.</li> <li>Choose the "Delete" option (not "Archive").</li> </ul> </li> </ol> <h3>Step 2: Create and Manage Tickets</h3> <h4>Ticket 1: Online Call Center System Down</h4> <ol> <li><strong>As an End-User:</strong> <ul> <li>Create a ticket with the following details: <ul> <li><strong>Subject:</strong> Entire mobile/online Call Center system is down.</li> </ul> </li> <li>Submit the ticket.</li> </ul> </li> <li><strong>As Help Desk Agent (Mateo2):</strong> <ul> <li>View the ticket properties: <ul> <li>Priority</li> <li>Department</li> <li>SLA (Service Level Agreement)</li> <li>Assigned To</li> </ul> </li> </ul> </li> <li><strong>Update the Ticket Properties:</strong> <ul> <li><strong>Priority:</strong> Sev-A (1 hour, 24/7)</li> <li><strong>Department:</strong> Online Call Center Department</li> </ul> </li> <li><strong>Re-Observe the Ticket as "Mateo2":</strong> <ul> <li>Check if you can view or modify the ticket properties after setting the above values.</li> </ul> </li> <li><strong>As Help Desk Agent (Mateo1):</strong> <ul> <li>Work the ticket to completion.</li> </ul> </li> </ol> <h4>Additional Tasks</h4> <ol> <li><strong>Switch to the Admin Panel:</strong> <ul> <li>Assign yourself "View-access" to the SysAdmins department.</li> </ul> </li> <li><strong>Switch Back to Agent Panel:</strong> <ul> <li>Observe the escalated ticket.</li> <li>Note that you can view the ticket but can no longer make changes to it.</li> </ul> </li> <li><strong>Solve the Ticket:</strong> <ul> <li>Complete the resolution process for all tickets.</li> </ul> </li> </ol>
